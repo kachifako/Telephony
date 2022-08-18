@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,300;0,800;1,600&display=swap');
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+header{
+    margin: 10% 15% 0% 15%;
+    font-size: x-large;
+    background-image: url(desktop-background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    margin: 5% 25%;
+}
+
+label{
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(79, 79, 116);
+    
+}
+
+.input-div{
+    display: 	flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-div img{
+    border: hidden;
+}
+
+input{
+    width:100%;
+    height: 27px;
+    border: 2px solid rgb(112, 112, 123);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(63, 63, 81);
+    padding: 2.5% 5%;
+    background-color: rgb(246, 244, 244);
+}
+
+input::placeholder{
+    padding: 1%;
+    color: rgb(145, 145, 215);
+    font-weight: 300;
+    font-size: medium;
+} 
+
+
+
+.submit{
+    width: 60%;
+    height: 48px;
+    margin: 7% 50%;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: antiquewhite;
+    background-color: rgb(106, 106, 146);
+    padding: 0%;
+}
+
+.submit:hover{
+    background-color: rgb(145, 145, 215);
+}
+
+
+
+
+
+
+
+
+
+
+                        /* mobile responsive section*/
+
+
+@media screen and (max-width: 800px){
+    header{
+        width: 100%;
+        padding: 4%;
+        margin: 0%;
+        background-position: 30% 20%;
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+
+    .submit{
+        width: 70%;
+        height: 45px;
+        margin-left: 30%;
+        
+    }
+}       
+
+
+
+@media screen and (max-width: 400px){
+
+    header{
+        background-position: 50% 40%;
+    }
+
+    form{
+        margin: 5% 20%;
+    }
+
+
+    label{
+        font-size: large;
+    }
+
+
+    input::placeholder{
+        font-weight: 100;
+    }
+
+    #errorMessage{
+        font-size: x-small;
+    }
+
+    #errorMessage img{
+        width: 10px;
+        height: 10px;
+       
+    }
+
+    .submit{
+        font-size: medium;
+    }
+    
+}
